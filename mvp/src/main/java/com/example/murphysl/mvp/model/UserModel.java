@@ -28,7 +28,8 @@ public class UserModel implements IUser{
         return password;
     }
 
-    public boolean checkPassword(String name , String password){
+    @Override
+    public boolean checkPassword(String name, String password) {
         if(name == null || password == null || !name.equals(getName()) || !password.equals(getPassword()))
             return false;
         return true;
