@@ -1,1 +1,1 @@
-include ':app', ':tagslayout', ':mvp'
+include ':app', ':tagslayout', ':mvp', ':imtest'
