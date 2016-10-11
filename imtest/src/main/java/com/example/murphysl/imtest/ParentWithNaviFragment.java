@@ -35,6 +35,7 @@ public abstract class ParentWithNaviFragment extends BaseFragment {
         tv_right.setOnClickListener(clickListener);
         tv_title.setText(title());
         refreshTop();
+        Log.i("init" , "init");
     }
 
     View.OnClickListener clickListener = new View.OnClickListener() {

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.Application;
 import android.graphics.Bitmap;
 
+import com.example.murphysl.imtest.IM.MyMessageHandler;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.orhanobut.logger.Logger;
@@ -30,9 +31,6 @@ public class MyApplication extends Application {
     private void setInstance(MyApplication app) {
         setMyApplication(app);
     }
-    public static MyApplication getINSTANCE() {
-        return INSTANCE;
-    }
     private static void setMyApplication(MyApplication a) {
         MyApplication.INSTANCE = a;
     }
@@ -48,7 +46,7 @@ public class MyApplication extends Application {
          */
         if (getApplicationInfo().packageName.equals(getMyProcessName())){
             BmobIM.init(this); //im初始化
-            BmobIM.registerDefaultMessageHandler(new MyMessageHandler(this)); //注册消息接收器 this
+            BmobIM.registerDefaultMessageHandler(new MyMessageHandler(this)); //注册消息接收器
         }
         UniversalImageLoader.initImageLoader(this);//UI初始化
 

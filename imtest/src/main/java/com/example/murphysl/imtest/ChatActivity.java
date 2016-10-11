@@ -33,6 +33,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 import com.orhanobut.logger.Logger;
 
+import org.greenrobot.eventbus.Subscribe;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.util.HashMap;
@@ -52,6 +54,7 @@ import cn.bmob.newim.bean.BmobIMVideoMessage;
 import cn.bmob.newim.core.BmobIMClient;
 import cn.bmob.newim.core.BmobRecordManager;
 import cn.bmob.newim.event.MessageEvent;
+import cn.bmob.newim.event.OfflineMessageEvent;
 import cn.bmob.newim.listener.MessageListHandler;
 import cn.bmob.newim.listener.MessageSendListener;
 import cn.bmob.newim.listener.MessagesQueryListener;
@@ -129,7 +132,6 @@ public class ChatActivity extends ParentWithNaviActivity implements ObseverListe
             public void clickRight() {
                 Bundle bundle = new Bundle();
                 bundle.putString("ID"  ,aroundID);
-                //startActivity(DateActivity.class,bundle);
             }
         };
     }
@@ -623,34 +625,35 @@ public class ChatActivity extends ParentWithNaviActivity implements ObseverListe
 
     @Override
     public void onMessageReceive(List<MessageEvent> list) {
-        //Logger.i("聊天页面接收到消息：" + list.size());
+        Logger.i("聊天页面接收到消息：" + list.size());
         //当注册页面消息监听时候，有消息（包含离线消息）到来时会回调该方法
         for (int i=0;i<list.size();i++){
             addMessage2Chat(list.get(i));
         }
     }
 
-//    /**接收到聊天消息
-//     * @param event
-//     */
-//    @Subscribe
-//    public void onEventMainThread(MessageEvent event){
-//        addMessage2Chat(event);
-//    }
-//
-//    @Subscribe
-//    public void onEventMainThread(OfflineMessageEvent event){
-//        Map<String,List<MessageEvent>> map =event.getEventMap();
-//        if(map!=null&&map.size()>0){
-//            //只获取当前聊天对象的离线消息
-//            List<MessageEvent> list = map.get(c.getConversationId());
-//            if(list!=null && list.size()>0){
-//                for (int i=0;i<list.size();i++){
-//                    addMessage2Chat(list.get(i));
-//                }
-//            }
-//        }
-//    }
+    /**
+     * 接收到聊天消息
+     * @param event
+     */
+    @Subscribe
+    public void onEventMainThread(MessageEvent event){
+        addMessage2Chat(event);
+    }
+
+    @Subscribe
+    public void onEventMainThread(OfflineMessageEvent event){
+        Map<String,List<MessageEvent>> map =event.getEventMap();
+        if(map!=null&&map.size()>0){
+            //只获取当前聊天对象的离线消息
+            List<MessageEvent> list = map.get(c.getConversationId());
+            if(list!=null && list.size()>0){
+                for (int i=0;i<list.size();i++){
+                    addMessage2Chat(list.get(i));
+                }
+            }
+        }
+    }
 
     /**添加消息到聊天界面中
      * @param event
@@ -667,21 +670,6 @@ public class ChatActivity extends ParentWithNaviActivity implements ObseverListe
             scrollToBottom();
         }else{
             Logger.i("不是与当前聊天对象的消息");
-        }
-    }
-
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event) {
-        if (keyCode == KeyEvent.KEYCODE_BACK) {
-            /*if (layout_more.getVisibility() == View.VISIBLE) {
-                layout_more.setVisibility(View.GONE);
-                return false;
-            } else {
-                return super.onKeyDown(keyCode, event);
-            }*/
-            return false;
-        } else {
-            return super.onKeyDown(keyCode, event);
         }
     }
 

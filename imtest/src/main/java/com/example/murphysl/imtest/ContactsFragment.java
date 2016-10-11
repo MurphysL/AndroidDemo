@@ -6,11 +6,11 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewTreeObserver;
-import android.widget.Toast;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -48,10 +48,10 @@ public class ContactsFragment extends ParentWithNaviFragment{
         return "联系人";
     }
 
-    @Override
+    /*@Override
     public Object right() {
         return R.drawable.base_action_bar_add_bg_selector;
-    }
+    }*/
 
     @Override
     public ParentWithNaviActivity.ToolBarListener setToolBarListener() {
@@ -63,7 +63,7 @@ public class ContactsFragment extends ParentWithNaviFragment{
 
             @Override
             public void clickRight() {
-                startActivity(SearchUserActivity.class,null);
+                /*startActivity(SearchUserActivity.class,null);*/
             }
         };
     }

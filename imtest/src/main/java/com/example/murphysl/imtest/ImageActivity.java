@@ -293,7 +293,6 @@ public class ImageActivity extends Activity implements ListImageDirPopupWindow.O
 
         }else{
             Toast.makeText(this , "发送图片不能为空" ,Toast.LENGTH_SHORT).show();
-
         }
         finish();
     }

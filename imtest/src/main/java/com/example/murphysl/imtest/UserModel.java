@@ -130,7 +130,8 @@ public class UserModel extends BaseModel {
         } catch (Exception e) {
             e.printStackTrace();
         }
-        query.addWhereContains("username", username);
+        //query.addWhereContains("username", username);
+        query.addWhereEqualTo("username", username);
         query.setLimit(limit);
         query.order("-createdAt");
         query.findObjects(getContext(), new FindListener<UserBean>() {
