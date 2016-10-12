@@ -5,6 +5,8 @@ import android.app.Application;
 import android.graphics.Bitmap;
 
 import com.example.murphysl.imtest.IM.MyMessageHandler;
+import com.example.murphysl.imtest.base.UniversalImageLoader;
+import com.example.murphysl.imtest.util.ActivityManagerUtils;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.assist.ImageScaleType;
 import com.orhanobut.logger.Logger;
@@ -34,7 +36,6 @@ public class MyApplication extends Application {
     private static void setMyApplication(MyApplication a) {
         MyApplication.INSTANCE = a;
     }
-
 
     @Override
     public void onCreate() {

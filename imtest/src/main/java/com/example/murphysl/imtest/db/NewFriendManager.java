@@ -4,8 +4,8 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.text.TextUtils;
 
-import com.example.murphysl.imtest.Config;
-import com.example.murphysl.imtest.UserBean;
+import com.example.murphysl.imtest.util.Config;
+import com.example.murphysl.imtest.bean.UserBean;
 import com.example.murphysl.imtest.db.dao.DaoMaster;
 import com.example.murphysl.imtest.db.dao.DaoSession;
 import com.example.murphysl.imtest.db.dao.NewFriendDao;
