@@ -1,1 +1,1 @@
-include ':app', ':tagslayout', ':mvp', ':imtest'
+include ':app', ':tagslayout', ':mvp', ':imtest', ':pinterestlayout'
