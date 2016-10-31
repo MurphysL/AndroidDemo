@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
         TagsLayout tl = (TagsLayout) findViewById(R.id.tags);
         ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT , ViewGroup.LayoutParams.WRAP_CONTENT);
 
-
         String[] tags = {"傲之追猎者" , "盲僧" , "殇之木乃伊" , "深渊巨口" , "德玛西亚之力" , "星界游神" , "诺克萨斯之手"};
         for(int i = 0 ; i < tags.length ; i ++){
             TextView tv = new TextView(this);
