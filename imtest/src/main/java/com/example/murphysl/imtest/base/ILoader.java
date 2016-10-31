@@ -25,5 +25,4 @@ public interface ILoader {
      * @param listener
      */
     void load(ImageView iv, String url, int defaultRes, ImageLoadingListener listener);
-
 }
