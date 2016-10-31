@@ -10,6 +10,7 @@ import android.app.usage.UsageStats;
  */
 
 public class UserModel implements IUser{
+
     private String name;
     private String password;
 
