@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.murphysl.todo"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
@@ -32,4 +32,7 @@ dependencies {
     compile 'com.google.code.gson:gson:2.3.1'
     //图片下载
     compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    //调色板
+    compile 'com.android.support:palette-v7:24.0.0'
 }
