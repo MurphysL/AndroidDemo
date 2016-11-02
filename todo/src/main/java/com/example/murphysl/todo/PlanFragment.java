@@ -1,7 +1,6 @@
 package com.example.murphysl.todo;
 
 import android.graphics.Bitmap;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -13,6 +12,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.bumptech.glide.request.animation.GlideAnimation;
 import com.bumptech.glide.request.target.SimpleTarget;
 
@@ -60,6 +60,8 @@ public class PlanFragment extends Fragment {
                 .load("http://tu.ihuan.me/api/bing")
                 .centerCrop()
                 .crossFade() //设置淡入淡出效果，默认300ms，可以传参
+                .diskCacheStrategy( DiskCacheStrategy.NONE )//跳过磁盘缓存
+                .skipMemoryCache( true )//跳过内存
                 .into(imageView);
 
         //getContext!!!!
