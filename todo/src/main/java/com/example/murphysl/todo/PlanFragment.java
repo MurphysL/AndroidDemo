@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v7.graphics.Palette;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +25,8 @@ import com.bumptech.glide.request.target.SimpleTarget;
  */
 
 public class PlanFragment extends Fragment {
+
+    private static final String TAG = "PlanFragment";
 
     private ImageView imageView;
     private EditText title;
@@ -68,16 +71,20 @@ public class PlanFragment extends Fragment {
         Glide.with(this)
                 .load("http://tu.ihuan.me/api/bing")
                 .asBitmap()
+                .diskCacheStrategy( DiskCacheStrategy.NONE)
+                .skipMemoryCache(true)
                 .into(new SimpleTarget<Bitmap>() {
                     @Override
                     public void onResourceReady(Bitmap resource, GlideAnimation<? super Bitmap> glideAnimation) {
                         Palette.from(resource).generate(new Palette.PaletteAsyncListener() {
                             @Override
                             public void onGenerated(Palette palette) {
-                                Palette.Swatch s1 = palette.getVibrantSwatch();
-                                ((MainActivity)getActivity()).changeColor(s1);
-                                title.setTextColor(s1.getRgb());
-                                content.setTextColor(s1.getRgb());
+                                Palette.Swatch s1 = palette.getVibrantSwatch();//getVibrantSwatch()可能返回null
+                                if(null != s1) {
+                                    ((MainActivity) getActivity()).changeColor(s1);
+                                    title.setTextColor(s1.getRgb());
+                                    content.setTextColor(s1.getRgb());
+                                }
                             }
                         });
                     }

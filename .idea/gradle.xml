@@ -18,19 +18,7 @@
             <option value="$PROJECT_DIR$/todo" />
           </set>
         </option>
-        <option name="myModules">
-          <set>
-            <option value="$PROJECT_DIR$" />
-            <option value="$PROJECT_DIR$/app" />
-            <option value="$PROJECT_DIR$/imtest" />
-            <option value="$PROJECT_DIR$/mvp" />
-            <option value="$PROJECT_DIR$/pinterestlayout" />
-            <option value="$PROJECT_DIR$/tagslayout" />
-            <option value="$PROJECT_DIR$/test" />
-            <option value="$PROJECT_DIR$/thread" />
-            <option value="$PROJECT_DIR$/todo" />
-          </set>
-        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
     </option>
   </component>
