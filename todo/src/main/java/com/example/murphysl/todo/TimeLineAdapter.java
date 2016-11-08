@@ -1,18 +1,17 @@
 package com.example.murphysl.todo;
 
 import android.content.Context;
+import android.content.Intent;
+import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.vipul.hp_hp.timelineview.LineType;
+import com.example.murphysl.todo.db.entity.Todo;
 import com.vipul.hp_hp.timelineview.TimelineView;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -25,11 +24,13 @@ import java.util.List;
 
 public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.TimeLineViewHolder> {
 
-    private List<String> list;
+    private List<Todo> list;
     private LayoutInflater layoutInflater;
+    private Context context;
 
-    public TimeLineAdapter(Context context , List<String> list){
+    public TimeLineAdapter(Context context , List<Todo> list){
         this.list = list;
+        this.context = context;
 
         layoutInflater = LayoutInflater.from(context);
     }
@@ -43,13 +44,28 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.TimeLi
 
     @Override
     public void onBindViewHolder(TimeLineViewHolder holder, int position) {
-        Long d = System.currentTimeMillis();
-        SimpleDateFormat format = new SimpleDateFormat("yyyy年MM月dd日");
-        Date date = new Date();
-        String s = format.format(date);
 
-        holder.dateView.setText(s);
-        holder.textView.setText(list.get(position));
+        Todo todo = list.get(position);
+        final String data = todo.getCreateTime();
+        final String title = todo.getTitle();
+        final String content = todo.getContent();
+
+        holder.dateView.setText(list.get(position).getCreateTime());
+        holder.textView.setText(list.get(position).getTitle());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                Bundle bundle = new Bundle();
+                bundle.putString("data" , data);
+                bundle.putString("title" , title);
+                bundle.putString("content" , content);
+                intent.putExtras(bundle);
+                intent.setClass(context , DetailActivity.class);
+
+                context.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -67,10 +83,11 @@ public class TimeLineAdapter extends RecyclerView.Adapter<TimeLineAdapter.TimeLi
         public TextView textView;
         public TimelineView timelineView;
         public TextView dateView;
+        public View itemView;
 
         public TimeLineViewHolder(View itemView , int viewType) {
             super(itemView);
-
+            this.itemView = itemView;
             dateView = (TextView) itemView.findViewById(R.id.date);
             textView = (TextView) itemView.findViewById(R.id.text);
             timelineView = (TimelineView) itemView.findViewById(R.id.time_marker);

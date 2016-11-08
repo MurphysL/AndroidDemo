@@ -1,5 +1,6 @@
 package com.example.murphysl.todo;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -36,8 +37,7 @@ public class MainActivity extends AppCompatActivity{
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                startActivity(new Intent(MainActivity.this , NewActivity.class));
             }
         });
 
@@ -49,13 +49,10 @@ public class MainActivity extends AppCompatActivity{
     }
 
     private void initPager() {
-        LayoutInflater inflater = LayoutInflater.from(this);
-        //View plan = inflater.inflate(R.layout.plan_fragment , null);
         Fragment plan = new PlanFragment();
         Fragment history = new HistoryFragment();
         list.add(plan);
         list.add(history);
-
     }
 
     private void initView(){

@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="90dp"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app= "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="100dp">
 
     <android.support.v7.widget.CardView
+        android:background="?android:attr/selectableItemBackgroundBorderless"
         app:cardCornerRadius="10dp"
         android:elevation="10dp"
-        android:background="?android:attr/selectableItemBackgroundBorderless"
         android:layout_marginTop="8dp"
-        android:layout_marginLeft="40dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginBottom="8dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
@@ -20,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
             <TextView
-                android:id="@+id/date"
+                android:id="@+id/plan_date"
                 android:text="时间"
                 android:textSize="15sp"
                 android:layout_marginLeft="40dp"
@@ -29,7 +30,7 @@
                 android:layout_height="wrap_content" />
 
             <TextView
-                android:id="@+id/text"
+                android:id="@+id/plan_title"
                 android:text="文本内容"
                 android:layout_marginTop="8dp"
                 android:textSize="25sp"
@@ -39,8 +40,13 @@
 
         </LinearLayout>
 
+        <ImageView
+            android:id="@+id/plan_select"
+            android:src="@drawable/ic_check_black_24dp"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
     </android.support.v7.widget.CardView>
 
-    <include layout="@layout/content_main" />
-
-</RelativeLayout>
+</LinearLayout>

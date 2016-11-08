@@ -8,7 +8,7 @@ import org.greenrobot.greendao.annotation.*;
  * Entity mapped to table "todo".
  */
 @Entity(nameInDb = "todo")
-public class Todo {
+public class Todo{
 
     @Id
     private Long id;

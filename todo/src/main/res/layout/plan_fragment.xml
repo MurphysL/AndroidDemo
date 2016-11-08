@@ -1,70 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="150dp" >
-        <ImageView
-            android:id="@+id/image"
-            android:src="@mipmap/ic_launcher"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="75dp">
-        <android.support.design.widget.TextInputLayout
-            android:layout_marginTop="10dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:counterEnabled="true"
-            app:counterMaxLength="12"
-            app:hintAnimationEnabled="true"
-            app:counterOverflowTextAppearance="@android:style/TextAppearance.DeviceDefault.Large">
-            <EditText
-                android:id="@+id/et_title"
-                android:background="@null"
-                android:maxLines="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent" />
-        </android.support.design.widget.TextInputLayout>
-    </android.support.v7.widget.CardView>
-
-    <android.support.v7.widget.CardView
-        android:layout_marginTop="10dp"
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-        <ScrollView
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_gravity="center_horizontal|top"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-            <android.support.design.widget.TextInputLayout
-                android:layout_marginTop="10dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
+            android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+        <com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader
+            android:id="@+id/header"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:counterEnabled="true"
-                app:counterMaxLength="100"
-                app:hintAnimationEnabled="true"
-                app:counterOverflowTextAppearance="@android:style/TextAppearance.DeviceDefault.Large">
-                <EditText
-                    android:id="@+id/et_content"
-                    android:background="@null"
-                    android:minLines="8"
+                android:layout_height="150dp" >
+                <ImageView
+                    android:id="@+id/bing_pic"
+                    android:src="@mipmap/ic_launcher"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent" />
-            </android.support.design.widget.TextInputLayout>
-        </ScrollView>
-    </android.support.v7.widget.CardView>
+            </android.support.v7.widget.CardView>
+
+        </com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader>
+
+    </FrameLayout>
+
+
 
 
 </LinearLayout>
