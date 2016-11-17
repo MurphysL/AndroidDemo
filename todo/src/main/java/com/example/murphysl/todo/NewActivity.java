@@ -21,7 +21,6 @@ import org.greenrobot.greendao.query.QueryBuilder;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.List;
 
 /**
  * NewActivity
@@ -56,7 +55,7 @@ public class NewActivity extends AppCompatActivity {
         toolbar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                time = PickUtils.pickTime(NewActivity.this , toolbar);
+                PickUtils.pickTime(NewActivity.this , toolbar);
                 Log.i("test", "onClick: " + time);
                 toolbar.setTitle(time);
             }
@@ -111,6 +110,10 @@ public class NewActivity extends AppCompatActivity {
         time = format.format(date);
 
         toolbar.setTitle(time);
+    }
+
+    public void getDate(String date){
+        time = date;
     }
 
 }

@@ -35,10 +35,12 @@ public class PlanAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
     private List<Todo> todos;
     private Context context;
+    private View root;
 
-    public PlanAdapter(Context context , List<Todo> todos){
+    public PlanAdapter(Context context ,View root , List<Todo> todos){
         this.todos = todos;
         this.context = context;
+        this.root = root;
     }
 
     @Override
@@ -85,7 +87,7 @@ public class PlanAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
                 DaoSession daoSession = daoMaster.newSession();
                 NoteDao noteDao = daoSession.getNoteDao();
                 noteDao.delete(todo);
-
+                Snackbar.make(root, "删除成功" , Snackbar.LENGTH_SHORT).show();
                 return true;
             }
         });

@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.bartoszlipinski.recyclerviewheader2.RecyclerViewHeader;
 import com.bumptech.glide.Glide;
@@ -74,7 +75,7 @@ public class PlanFragment extends Fragment {
         header = (RecyclerViewHeader) root.findViewById(R.id.header);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-        recyclerView.setAdapter(new PlanAdapter(getContext() , todos));
+        recyclerView.setAdapter(new PlanAdapter(getContext() , root , todos));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         header.attachTo(recyclerView);
     }

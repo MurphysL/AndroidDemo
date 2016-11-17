@@ -21,46 +21,48 @@ import java.util.Map;
 public class PickUtils {
 
     private static final String TAG = "TimePickUtils";
+    private static StringBuilder res = new StringBuilder();
 
     /**
      * 获取时间
      * @param context
      * @return
      */
-        public static String pickTime(Context context, final Toolbar toolbar) {
-            final Toolbar toolbar1 = toolbar;
-            final StringBuilder res = new StringBuilder();
-            final Map<String, Integer> valueMap = new HashMap<>();
-            Calendar c = Calendar.getInstance();
+    public static void pickTime(Context context, final Toolbar toolbar) {
+        final Toolbar toolbar1 = toolbar;
+        //final StringBuilder res = new StringBuilder();
+        final Map<String, Integer> valueMap = new HashMap<>();
+        Calendar c = Calendar.getInstance();
 
-            View view = LayoutInflater.from(context).inflate(R.layout.dialog_datetime, null);
-            final DatePicker datePicker = (DatePicker) view.findViewById(R.id.dialog_datepicker);
+        View view = LayoutInflater.from(context).inflate(R.layout.dialog_datetime, null);
+        final DatePicker datePicker = (DatePicker) view.findViewById(R.id.dialog_datepicker);
 
-            valueMap.put("year", datePicker.getYear());
-            valueMap.put("monthOfYear", datePicker.getMonth());
-            valueMap.put("dayOfMonth", datePicker.getDayOfMonth());
+        valueMap.put("year", datePicker.getYear());
+        valueMap.put("monthOfYear", datePicker.getMonth());
+        valueMap.put("dayOfMonth", datePicker.getDayOfMonth());
 
-            datePicker.init(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH), new DatePicker.OnDateChangedListener() {
-                @Override
-                public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                    valueMap.put("year", year);
-                    valueMap.put("monthOfYear", monthOfYear);
-                    valueMap.put("dayOfMonth", dayOfMonth);
-                }
-            });
+        datePicker.init(c.get(Calendar.YEAR), c.get(Calendar.MONTH), c.get(Calendar.DAY_OF_MONTH), new DatePicker.OnDateChangedListener() {
+            @Override
+            public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+                valueMap.put("year", year);
+                valueMap.put("monthOfYear", monthOfYear);
+                valueMap.put("dayOfMonth", dayOfMonth);
+            }
+        });
 
-            new AlertDialog.Builder(context).setView(view).setPositiveButton("确定", new DialogInterface.OnClickListener() {
-                @Override
-                public void onClick(DialogInterface dialog, int which) {
-                    res.append(valueMap.get("year") + "年");
-                    res.append(valueMap.get("monthOfYear") + "月");
-                    res.append(valueMap.get("dayOfMonth")+"日");
-                    toolbar1.setTitle(res.toString());
-                }
-            }).create().show();
+        //StringBuilder
+        new AlertDialog.Builder(context).setView(view).setPositiveButton("确定", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                res.append(valueMap.get("year") + "年");
+                res.append((valueMap.get("monthOfYear")+1) + "月");
+                res.append(valueMap.get("dayOfMonth")+"日");
+                toolbar1.setTitle(res.toString());
+                Log.i(TAG, "onClick: " +res);
+                new NewActivity().getDate(res.toString());
+            }
+        }).create().show();
 
-            Log.i(TAG, "pickTime: "+ res.toString());
-            return res.toString();
-        }
+    }
 
 }

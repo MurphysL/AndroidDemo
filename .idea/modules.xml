@@ -4,11 +4,12 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/AndroidDemo.iml" filepath="$PROJECT_DIR$/AndroidDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoupdatecomponent/autoupdatecomponent.iml" filepath="$PROJECT_DIR$/autoupdatecomponent/autoupdatecomponent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/autoupdatetest/autoupdatetest.iml" filepath="$PROJECT_DIR$/autoupdatetest/autoupdatetest.iml" />
       <module fileurl="file://$PROJECT_DIR$/imtest/imtest.iml" filepath="$PROJECT_DIR$/imtest/imtest.iml" />
       <module fileurl="file://$PROJECT_DIR$/mvp/mvp.iml" filepath="$PROJECT_DIR$/mvp/mvp.iml" />
       <module fileurl="file://$PROJECT_DIR$/pinterestlayout/pinterestlayout.iml" filepath="$PROJECT_DIR$/pinterestlayout/pinterestlayout.iml" />
       <module fileurl="file://$PROJECT_DIR$/tagslayout/tagslayout.iml" filepath="$PROJECT_DIR$/tagslayout/tagslayout.iml" />
-      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
       <module fileurl="file://$PROJECT_DIR$/thread/thread.iml" filepath="$PROJECT_DIR$/thread/thread.iml" />
       <module fileurl="file://$PROJECT_DIR$/todo/todo.iml" filepath="$PROJECT_DIR$/todo/todo.iml" />
     </modules>
