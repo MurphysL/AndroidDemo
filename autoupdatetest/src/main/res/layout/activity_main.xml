@@ -8,6 +8,38 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.murphysl.autoupdatetest.MainActivity">
 
-    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-        android:text="Hello World!" />
+    <TextView
+        android:id="@+id/tx_progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下载未开始"/>
+
+    <ProgressBar
+        android:id="@+id/pb_progress"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tx_progress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <Button
+        android:id="@+id/cancle"
+        android:text="停止下载"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/pb_progress"
+
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/confrim"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/cancle"
+        android:layout_below="@+id/pb_progress"
+        android:text="开始下载"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
 </RelativeLayout>
