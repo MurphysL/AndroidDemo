@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.xbei.murphysl.recyclerviewexample.Bean.GankioRandomBean;
+
 import java.util.List;
 
 /**
@@ -24,7 +26,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private Context context ;
     private View view;
-    private List data;
+    private List<GankioRandomBean.ResultsBean> data;
 
     private MyViewHolder viewHolder;
 
@@ -41,6 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public MyAdapter(Context context , List data){
         this.context = context;
         this.data = data;
+        Log.i(TAG, "MyAdapter: " + data.size());
     }
 
     @Override
@@ -52,9 +55,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @Override
     public void onBindViewHolder(final MyViewHolder holder, final int position) {
-        holder.textView.setText(data.get(position) + "");
+        Log.i(TAG, "onBindViewHolder: " + data.get(position).getDesc());
+        holder.textView.setText(data.get(position).getDesc());
 
-        if(onItemClickListener != null){
+       /* if(onItemClickListener != null){
             holder.itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
@@ -69,7 +73,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                     return true;//拦截
                 }
             });
-        }
+        }*/
         Log.i(TAG, "getItemCount: " + position);
         if(position == getItemCount() - 1){
             loadData();
@@ -86,15 +90,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         Snackbar.make(view , "已到达底部" , Snackbar.LENGTH_SHORT).show();
     }
 
-    public void addItem(int pos){
-        data.add(10);
+  /*  public void addItem(int pos){
         notifyItemInserted(pos);
     }
 
     public void deleteItem(int pos){
         data.remove(data.get(pos));
         notifyItemRemoved(pos);
-    }
+    }*/
 
     public class MyViewHolder extends RecyclerView.ViewHolder{
 
