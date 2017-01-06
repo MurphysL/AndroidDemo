@@ -14,7 +14,7 @@ public class ThreadInfo {
     private String location;
     private int start;
     private int end;
-    private Boolean isFinish;
+    private Integer isFinish;
 
     @NotNull
     private String threadName;
@@ -24,7 +24,7 @@ public class ThreadInfo {
     }
 
     @Generated
-    public ThreadInfo(String location, int start, int end, Boolean isFinish, String threadName) {
+    public ThreadInfo(String location, int start, int end, Integer isFinish, String threadName) {
         this.location = location;
         this.start = start;
         this.end = end;
@@ -58,11 +58,11 @@ public class ThreadInfo {
         this.end = end;
     }
 
-    public Boolean getIsFinish() {
+    public Integer getIsFinish() {
         return isFinish;
     }
 
-    public void setIsFinish(Boolean isFinish) {
+    public void setIsFinish(Integer isFinish) {
         this.isFinish = isFinish;
     }
 

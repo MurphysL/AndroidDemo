@@ -25,7 +25,7 @@ public class ThreadInfoDao extends AbstractDao<ThreadInfo, Void> {
         public final static Property Location = new Property(0, String.class, "location", false, "LOCATION");
         public final static Property Start = new Property(1, int.class, "start", false, "START");
         public final static Property End = new Property(2, int.class, "end", false, "END");
-        public final static Property IsFinish = new Property(3, Boolean.class, "isFinish", false, "IS_FINISH");
+        public final static Property IsFinish = new Property(3, Integer.class, "isFinish", false, "IS_FINISH");
         public final static Property ThreadName = new Property(4, String.class, "threadName", false, "THREAD_NAME");
     }
 
@@ -62,9 +62,9 @@ public class ThreadInfoDao extends AbstractDao<ThreadInfo, Void> {
         stmt.bindLong(2, entity.getStart());
         stmt.bindLong(3, entity.getEnd());
  
-        Boolean isFinish = entity.getIsFinish();
+        Integer isFinish = entity.getIsFinish();
         if (isFinish != null) {
-            stmt.bindLong(4, isFinish ? 1L: 0L);
+            stmt.bindLong(4, isFinish);
         }
         stmt.bindString(5, entity.getThreadName());
     }
@@ -76,9 +76,9 @@ public class ThreadInfoDao extends AbstractDao<ThreadInfo, Void> {
         stmt.bindLong(2, entity.getStart());
         stmt.bindLong(3, entity.getEnd());
  
-        Boolean isFinish = entity.getIsFinish();
+        Integer isFinish = entity.getIsFinish();
         if (isFinish != null) {
-            stmt.bindLong(4, isFinish ? 1L: 0L);
+            stmt.bindLong(4, isFinish);
         }
         stmt.bindString(5, entity.getThreadName());
     }
@@ -94,7 +94,7 @@ public class ThreadInfoDao extends AbstractDao<ThreadInfo, Void> {
             cursor.getString(offset + 0), // location
             cursor.getInt(offset + 1), // start
             cursor.getInt(offset + 2), // end
-            cursor.isNull(offset + 3) ? null : cursor.getShort(offset + 3) != 0, // isFinish
+            cursor.isNull(offset + 3) ? null : cursor.getInt(offset + 3), // isFinish
             cursor.getString(offset + 4) // threadName
         );
         return entity;
@@ -105,7 +105,7 @@ public class ThreadInfoDao extends AbstractDao<ThreadInfo, Void> {
         entity.setLocation(cursor.getString(offset + 0));
         entity.setStart(cursor.getInt(offset + 1));
         entity.setEnd(cursor.getInt(offset + 2));
-        entity.setIsFinish(cursor.isNull(offset + 3) ? null : cursor.getShort(offset + 3) != 0);
+        entity.setIsFinish(cursor.isNull(offset + 3) ? null : cursor.getInt(offset + 3));
         entity.setThreadName(cursor.getString(offset + 4));
      }
     

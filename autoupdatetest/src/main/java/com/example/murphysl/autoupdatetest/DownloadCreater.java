@@ -19,16 +19,20 @@ public class DownloadCreater {
 
     public static void main(String[] args) throws Exception {
         //生成包名
-        Schema schema = new Schema(1 , "dao");
+        Schema schema = new Schema(1 , "com.example.murphysl.autoupdatetest.db");
         Entity threadInfo = schema.addEntity("ThreadInfo");
+        Entity fileInfo = schema.addEntity("FileInfo");
         threadInfo.addStringProperty("location").notNull();
         threadInfo.addIntProperty("start").notNull();
         threadInfo.addIntProperty("end").notNull();
-        threadInfo.addBooleanProperty("isFinish");
+        threadInfo.addIntProperty("isFinish");
         threadInfo.addStringProperty("threadName").notNull();
+        fileInfo.addStringProperty("filename").notNull();
+        fileInfo.addStringProperty("my_url").notNull();
+        fileInfo.addIntProperty("length").notNull();
+        fileInfo.addIntProperty("progress").notNull();
 
-        new DaoGenerator().generateAll(schema , "E://AndroidStudioProjects/AndroidDemo/autoupdatetest"
-         + "/src/main/java/com/example/murphysl/autoupdatetest/db");
+        new DaoGenerator().generateAll(schema , "D://db2");
 
     }
 }
