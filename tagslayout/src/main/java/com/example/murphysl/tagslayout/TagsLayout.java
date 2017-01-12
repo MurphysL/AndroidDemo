@@ -2,15 +2,9 @@ package com.example.murphysl.tagslayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.os.Bundle;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
 
 /**
  * TagsLayout
@@ -73,7 +67,7 @@ public class TagsLayout extends ViewGroup {
             // 当前子空间实际占据的高度
             int childHeight = child.getMeasuredHeight() + lp.topMargin + lp.bottomMargin + childVerticalSpace;
             /**
-             * 如果加入当前child，则超出最大宽度，则的到目前最大宽度给width，类加height 然后开启新行
+             * 如果加入当前child超出最大宽度，则的到目前最大宽度给width，类加height 然后开启新行
              */
             if (lineWidth + childWidth > sizeWidth - getPaddingLeft() - getPaddingRight()) {
                 width = Math.max(lineWidth, childWidth);// 取最大的
@@ -112,17 +106,16 @@ public class TagsLayout extends ViewGroup {
      * 记录子控件的坐标
      */
     public class Location {
+        public int left;
+        public int top;
+        public int right;
+        public int bottom;
+
         public Location(int left, int top, int right, int bottom) {
             this.left = left;
             this.top = top;
             this.right = right;
             this.bottom = bottom;
         }
-
-        public int left;
-        public int top;
-        public int right;
-        public int bottom;
-
     }
 }

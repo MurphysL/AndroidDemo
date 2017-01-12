@@ -4,6 +4,7 @@ import android.graphics.Color;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -14,7 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         TagsLayout tl = (TagsLayout) findViewById(R.id.tags);
-        ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT , ViewGroup.LayoutParams.WRAP_CONTENT);
+
+        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT , ViewGroup.LayoutParams.WRAP_CONTENT);
+        ViewGroup.MarginLayoutParams layoutParams;
+        if(lp instanceof ViewGroup.MarginLayoutParams){
+             layoutParams = lp;
+        }else{
+            layoutParams = new ViewGroup.MarginLayoutParams(lp);
+        }
+       // ViewGroup.MarginLayoutParams layoutParams = new ViewGroup.MarginLayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT , ViewGroup.LayoutParams.WRAP_CONTENT);
 
         String[] tags = {"傲之追猎者" , "盲僧" , "殇之木乃伊" , "深渊巨口" , "德玛西亚之力" , "星界游神" , "诺克萨斯之手"};
         for(int i = 0 ; i < tags.length ; i ++){
