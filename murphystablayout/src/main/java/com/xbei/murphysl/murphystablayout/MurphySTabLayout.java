@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.util.AttributeSet;
+import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.RelativeLayout;
@@ -32,13 +33,24 @@ public class MurphySTabLayout extends RelativeLayout {
     private int rightTitleColor;
     private float rightTitleSize;
     private int rightBackground;
+
+    private TabLayoutClickListener tabLayoutClickListener;
+
+    public interface TabLayoutClickListener{
+        void leftClick();
+        void rightClick();
+    }
+
+    public void setTabLayoutClickListener(TabLayoutClickListener tabLayoutClickListener){
+        this.tabLayoutClickListener = tabLayoutClickListener;
+    }
     
     public MurphySTabLayout(Context context) {
-        super(context , null , 0 , 0);
+        this(context , null , 0 , 0);
     }
 
     public MurphySTabLayout(Context context, AttributeSet attrs) {
-        super(context, attrs , 0 , 0);
+        this(context, attrs , 0 , 0);
 
         TypedArray ta = context.obtainStyledAttributes(attrs ,R.styleable.MurphySTabLayout);
         title = ta.getString(R.styleable.MurphySTabLayout_title);
@@ -55,17 +67,31 @@ public class MurphySTabLayout extends RelativeLayout {
         rightTitleSize = ta.getFloat(R.styleable.MurphySTabLayout_rightTitleSize , 0);
         rightBackground = ta.getColor(R.styleable.MurphySTabLayout_rightBackground , 0);
 
+        ta.recycle();
+
         Button lb = new Button(context);
         lb.setBackgroundColor(leftBackground);
         lb.setText(leftTitle);
         lb.setTextColor(leftTitleColor);
         lb.setTextSize(leftTitleSize);
+        lb.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tabLayoutClickListener.leftClick();
+            }
+        });
 
         Button rb = new Button(context);
         rb.setBackgroundColor(rightBackground);
         rb.setText(rightTitle);
         rb.setTextColor(rightTitleColor);
         rb.setTextSize(rightTitleSize);
+        rb.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tabLayoutClickListener.rightClick();
+            }
+        });
 
         TextView tv = new TextView(context);
         tv.setText(title);
@@ -90,7 +116,7 @@ public class MurphySTabLayout extends RelativeLayout {
     }
 
     public MurphySTabLayout(Context context, AttributeSet attrs, int defStyleAttr) {
-        super(context, attrs, defStyleAttr , 0);
+        this(context, attrs, defStyleAttr , 0);
     }
 
     public MurphySTabLayout(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes) {

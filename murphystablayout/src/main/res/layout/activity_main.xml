@@ -11,6 +11,7 @@
     tools:context="com.xbei.murphysl.murphystablayout.MainActivity">
 
     <com.xbei.murphysl.murphystablayout.MurphySTabLayout
+        android:id="@+id/murphySTabLayout"
         app:leftBackground="@color/colorPrimary"
         app:leftTitle="退出"
         app:leftTitleSize="10"

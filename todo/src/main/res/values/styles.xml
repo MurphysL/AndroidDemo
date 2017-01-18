@@ -17,4 +17,5 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+    <style name="MaterialAppTheme" parent="@android:style/Theme.Material.Light"/>
 </resources>

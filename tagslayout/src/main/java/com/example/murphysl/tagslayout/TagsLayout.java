@@ -14,6 +14,7 @@ import android.view.ViewGroup;
  */
 
 public class TagsLayout extends ViewGroup {
+
     private int childHorizontalSpace;
     private int childVerticalSpace;
 
