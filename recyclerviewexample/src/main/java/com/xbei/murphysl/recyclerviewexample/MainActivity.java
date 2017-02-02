@@ -1,6 +1,7 @@
 package com.xbei.murphysl.recyclerviewexample;
 
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
     private RecyclerView recyclerView;
+    private SwipeRefreshLayout swipeRefreshLayout;
     private MyAdapter adapter;
     private List<GankioRandomBean.ResultsBean> list = new ArrayList<>();
     private GankioRandomBean bean;
@@ -79,9 +81,16 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        swipeRefreshLayout = (SwipeRefreshLayout) findViewById(R.id.swipe);
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview);
-
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager manager = new LinearLayoutManager(this);
+        recyclerView.setLayoutManager(manager);
+        recyclerView.addOnScrollListener(new LoadMoreListener(manager) {
+            @Override
+            public void loadMore(int currentPage) {
+                initData();
+            }
+        });
         adapter = new MyAdapter(this , list);
       /*  adapter.setOnItemClickListener(new MyAdapter.OnItemClickListener() {
             @Override
@@ -90,5 +99,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });*/
         recyclerView.setAdapter(adapter);
+
+        swipeRefreshLayout.setColorSchemeResources(
+                R.color.colorPrimary,
+                R.color.red,
+                R.color.green
+        );
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+            }
+        });
     }
 }

@@ -1,0 +1,25 @@
+<vector android:height="100dp"
+    android:width="500dp"
+    android:viewportHeight="100"
+    android:viewportWidth="500"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <path
+        android:name="line"
+        android:strokeLineCap="round"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="5"
+        android:strokeAlpha="1"
+        android:pathData="M450,70 L50,70"
+        ></path>
+
+    <path
+        android:name="search"
+        android:strokeLineCap="round"
+        android:strokeColor="#FF000000"
+        android:strokeWidth="5"
+        android:strokeAlpha="1"
+        android:pathData="M450,70 L429,42 A20,20,0,1,1,430,41"
+        ></path>
+
+</vector>

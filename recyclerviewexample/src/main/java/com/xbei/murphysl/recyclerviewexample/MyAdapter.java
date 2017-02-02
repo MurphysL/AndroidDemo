@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.xbei.murphysl.recyclerviewexample.Bean.GankioRandomBean;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -26,7 +27,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     private Context context ;
     private View view;
-    private List<GankioRandomBean.ResultsBean> data;
+    private List<GankioRandomBean.ResultsBean> data = new ArrayList<>();
 
     private MyViewHolder viewHolder;
 
@@ -42,7 +43,9 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public MyAdapter(Context context , List data){
         this.context = context;
+
         this.data = data;
+
         Log.i(TAG, "MyAdapter: " + data.size());
     }
 
@@ -74,10 +77,10 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
                 }
             });
         }*/
-        Log.i(TAG, "getItemCount: " + position);
-        if(position == getItemCount() - 1){
-            loadData();
-        }
+//        Log.i(TAG, "getItemCount: " + position);
+//        if(position == getItemCount() - 1){
+//            loadData();
+//        }
 
     }
 
