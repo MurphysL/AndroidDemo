@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Module1</string>
+
+    <string name="module1_hint">this is module 1</string>
+</resources>

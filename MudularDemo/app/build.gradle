@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+    defaultConfig {
+        applicationId "cn.edu.nuc.androidlab.mudulardemo"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion targetSdkVersion
+        versionCode rootProject.ext.versionCode
+        versionName rootProject.ext.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [moduleName: project.getName()]
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    annotationProcessor rootProject.ext.arouterCompiler
+
+    testCompile 'junit:junit:4.12'
+
+    if(isDebug.toBoolean()){
+        compile project(':resource')
+    }else{
+        compile project(':module1')
+        compile project(':module2')
+    }
+}
