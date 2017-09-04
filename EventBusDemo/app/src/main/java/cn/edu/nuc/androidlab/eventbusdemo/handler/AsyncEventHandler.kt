@@ -7,6 +7,8 @@ import cn.edu.nuc.androidlab.eventbusdemo.bean.Subscription
 /**
  * AsyncEventHandler
  *
+ * ThreadMode : Async
+ *
  * Created by MurphySL on 2017/9/2.
  */
 class AsyncEventHandler : EventHandler{
@@ -25,10 +27,9 @@ class AsyncEventHandler : EventHandler{
         })
     }
 
-
     class DispatcherThread(name : String) : HandlerThread(name){
 
-        var asyncHandler : Handler? = null
+        private var asyncHandler : Handler? = null
 
         fun post(runnable: Runnable){
             asyncHandler?.let {

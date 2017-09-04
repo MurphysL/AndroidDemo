@@ -7,4 +7,4 @@ package cn.edu.nuc.androidlab.eventbusdemo
  */
 @Retention(AnnotationRetention.RUNTIME)
 @Target(AnnotationTarget.FUNCTION)
-annotation class Subscriber(val tag: String)
+annotation class Subscriber(val tag: String, val mode : ThreadMode = ThreadMode.MAIN)

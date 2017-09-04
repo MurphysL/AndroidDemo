@@ -1,5 +1,6 @@
 package cn.edu.nuc.androidlab.eventbusdemo
 
+import android.util.Log
 import cn.edu.nuc.androidlab.eventbusdemo.bean.EventType
 import cn.edu.nuc.androidlab.eventbusdemo.bean.Subscription
 import cn.edu.nuc.androidlab.eventbusdemo.handler.AsyncEventHandler
@@ -13,6 +14,8 @@ import java.util.concurrent.CopyOnWriteArrayList
 
 /**
  * EventBus
+ *
+ * 单例
  *
  * Created by MurphySL on 2017/9/2.
  */
@@ -31,17 +34,23 @@ class EventBus{
         fun register(subscriber : Any) = hunter.findSubscriberMethod(subscriber)
 
         @JvmStatic
+        fun unregister(subscriber : Any){
+            hunter.removeSubscriberMethod(subscriber)
+        }
+
+        @JvmStatic
         fun post(event : Any, tag : String){
-            localEvents.get().offer(EventType(event.javaClass, tag))
+            localEvents.get().offer(EventType(event::class.java, tag))
             dispatcher.dispatchEvents(event)
         }
     }
 
     class EventDispatcher{
+        private val TAG = this.javaClass.simpleName
 
-        val uiHandler = UIThreadEventHandler()
-        val postHandler = DefaultEventHandler()
-        val asyncHandler = AsyncEventHandler()
+        private val uiHandler = UIThreadEventHandler()
+        private val postHandler = DefaultEventHandler()
+        private val asyncHandler = AsyncEventHandler()
 
         fun dispatchEvents(event : Any){
             val eventsQueue = localEvents.get()
@@ -50,8 +59,8 @@ class EventBus{
             }
         }
 
+        //查找匹配集合
         private fun deliveryEvent(eventType: EventType?, event: Any) {
-            val clz = event.javaClass
             val policy = DefaultMatchPolicy()
 
             eventType?.let {
@@ -63,15 +72,19 @@ class EventBus{
         }
 
         private fun handleEvent(eventType: EventType, event: Any) {
+
             val subscriptions = subscriberMap[eventType]
             subscriptions?.let {
                 subscriptions.forEach {
-                    //mode
+                    val eventHandler = it.thread
+                    when(eventHandler){
+                        ThreadMode.MAIN  -> uiHandler.handleEvent(it, event)
+                        ThreadMode.POST  -> postHandler.handleEvent(it, event)
+                        ThreadMode.ASYNC -> asyncHandler.handleEvent(it, event)
 
-                    val eventHandler = postHandler
-                    eventHandler.handleEvent(it, event)
+                    }
                 }
-            }
+            }?:Log.i(TAG, "错误")
         }
     }
 
