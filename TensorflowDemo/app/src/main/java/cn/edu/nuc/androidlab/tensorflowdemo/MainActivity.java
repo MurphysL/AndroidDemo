@@ -1,5 +1,6 @@
 package cn.edu.nuc.androidlab.tensorflowdemo;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -9,6 +10,7 @@ import android.os.Trace;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -68,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
                 Trace.beginSection("fetch");
                 inferenceInterface.fetch(OUTPUT_NODE, outputs);
 
+                for(int i = 0;i < outputs.length ;i ++){
+                    Log.i(TAG, outputs[i] + " ");
+                }
                 handler.sendEmptyMessage(argmax(outputs));
 
 
@@ -81,6 +86,12 @@ public class MainActivity extends AppCompatActivity {
     private void initView() {
         pic = (ImageView) findViewById(R.id.img);
         result_tv = (TextView) findViewById(R.id.result);
+        result_tv.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, HandwritingActivity.class));
+            }
+        });
     }
 
     public static int argmax(float[] prob){
