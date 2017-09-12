@@ -10,13 +10,11 @@ import android.os.Message;
 import android.os.Trace;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import org.tensorflow.contrib.android.TensorFlowInferenceInterface;
 
-import java.nio.DoubleBuffer;
 
 /**
  * HandWritingActivity
@@ -60,7 +58,7 @@ public class HandwritingActivity extends AppCompatActivity {
 
                 BitmapFactory.Options options = new BitmapFactory.Options();
                 options.inScaled = false;
-                Bitmap origin = BitmapFactory.decodeResource(getResources(), R.drawable.test3, options);
+                Bitmap origin = BitmapFactory.decodeResource(getResources(), R.drawable.test4, options);
                 Bitmap bitmap = zoomImage(origin, 64, 64);
 
                 float[]result = bitmapToFloatArray(bitmap);
@@ -76,20 +74,17 @@ public class HandwritingActivity extends AppCompatActivity {
                 String[] outputNames = new String[]{OUTPUT_NODE};
                 inferenceInterface.run(outputNames);
 
-                float[] outputs = new float[NUM_CLASSES];
+                float[] outputs = new float[50];
                 Trace.beginSection("fetch");
                 inferenceInterface.fetch(OUTPUT_NODE, outputs);
 
-                for(int i = 0; i< outputs.length ;i ++){
-                    Log.i(TAG, outputs[i] + " ");
-                }
-                handler.sendEmptyMessage(argmax(outputs));
+                Log.i(TAG, argmax(outputs) + " ");
+
+                //handler.sendEmptyMessage(argmax(outputs));
 
 
             }
         }).start();
-
-
 
     }
 
@@ -97,7 +92,7 @@ public class HandwritingActivity extends AppCompatActivity {
         pic = (ImageView) findViewById(R.id.img);
         BitmapFactory.Options options = new BitmapFactory.Options();
         options.inScaled = false;
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test2, options);
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test3, options);
         Bitmap bitmap2 = zoomImage(bitmap, 64, 64);
         pic.setImageBitmap(bitmap2);
         result_tv = (TextView) findViewById(R.id.result);
@@ -105,7 +100,7 @@ public class HandwritingActivity extends AppCompatActivity {
 
     public static int argmax(float[] prob){
         int result = 0;
-        for(int i=1;i<prob.length;i++) {
+        for(int i=0;i<prob.length;i++) {
             if (prob[result] < prob[i]) {
                 result = i;
             }
