@@ -11,5 +11,5 @@ public class JNIUtils {
         System.loadLibrary("native-lib");
     }
 
-    native void getEdge(Object bitmap);
+    native int[] getEdge(Object bitmap);
 }
