@@ -1,0 +1,7 @@
+#Tue Sep 12 19:24:22 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\TensorflowDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8f8bb1cc1e7d8df9d95e586f993c12da4aae7d28
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\TensorflowDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b5a7226c85f3b904f48660d3f236f6212608cddd\\classes.dex
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\TensorflowDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b5a7226c85f3b904f48660d3f236f6212608cddd
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\TensorflowDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8f8bb1cc1e7d8df9d95e586f993c12da4aae7d28\\classes.dex

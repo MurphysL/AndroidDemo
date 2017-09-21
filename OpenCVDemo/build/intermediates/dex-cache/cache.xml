@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\libs\libandroid_tensorflow_inference_java.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed7c77e89f52b9ab318b03dce7b09ba3562ea0dd">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\transforms\dex\debug\folders\1000\2\libandroid_tensorflow_inference_java_027824785b8e3e6bb8251c6b5647dff5828ede63\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b1904668deb5d89a1076db5a5d8284241873aa95\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="1785cddd095d5d46c0975f2423d61875a1bb5252">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_772959609f80a38d00636d4193078b9e93e198d1\classes.dex" />
+    </item>
+
+</items>

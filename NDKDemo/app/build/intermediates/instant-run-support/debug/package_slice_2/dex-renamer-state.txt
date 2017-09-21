@@ -1,0 +1,4 @@
+#Mon Sep 18 16:23:42 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\NDKDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2
+renamed.0=classes.dex
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\NDKDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_2\\classes.dex

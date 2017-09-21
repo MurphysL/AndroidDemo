@@ -1,0 +1,4 @@
+#Thu Sep 21 19:17:43 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5
+renamed.0=classes.dex
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\5\\slice_5\\classes.dex

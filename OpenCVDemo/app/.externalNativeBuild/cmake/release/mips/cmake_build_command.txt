@@ -1,0 +1,15 @@
+Executable : G:\Android\sdk\cmake\3.6.4111459\bin\cmake.exe
+arguments : 
+-HG:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app
+-BG:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\.externalNativeBuild\cmake\release\mips
+-GAndroid Gradle - Ninja
+-DANDROID_ABI=mips
+-DANDROID_NDK=G:\Android\sdk\ndk-bundle
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=G:\AndroidWorkspace\AndroidDemo\OpenCVDemo\app\build\intermediates\cmake\release\obj\mips
+-DCMAKE_BUILD_TYPE=Release
+-DCMAKE_MAKE_PROGRAM=G:\Android\sdk\cmake\3.6.4111459\bin\ninja.exe
+-DCMAKE_TOOLCHAIN_FILE=G:\Android\sdk\ndk-bundle\build\cmake\android.toolchain.cmake
+-DANDROID_PLATFORM=android-21
+-DCMAKE_CXX_FLAGS=-frtti -fexceptions
+jvmArgs : 
+

@@ -1,0 +1,19 @@
+#Sat Aug 12 12:19:29 CST 2017
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
+renamed.2=classes3.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+base.5=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+base.4=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+base.3=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+base.2=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10
+file.5=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13\\classes.dex
+file.4=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11\\classes.dex
+file.3=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14\\classes.dex
+file.2=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12\\classes.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15\\classes.dex
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\DynamicAnimationDemo\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\10\\classes.dex

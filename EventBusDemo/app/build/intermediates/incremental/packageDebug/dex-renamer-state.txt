@@ -1,0 +1,7 @@
+#Mon Sep 04 17:09:34 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\EventBusDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6719333fb9c8fdb01aeff313b709852f5d538024
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\EventBusDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_02bbf930a07d919001be0200ddaa2cce0d8f949e\\classes.dex
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\EventBusDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_02bbf930a07d919001be0200ddaa2cce0d8f949e
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\EventBusDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_6719333fb9c8fdb01aeff313b709852f5d538024\\classes.dex

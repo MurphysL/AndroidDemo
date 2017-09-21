@@ -1,0 +1,3 @@
+G:/AndroidWorkspace/AndroidDemo/OpenCVDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/native-lib.dir
+G:/AndroidWorkspace/AndroidDemo/OpenCVDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/edit_cache.dir
+G:/AndroidWorkspace/AndroidDemo/OpenCVDemo/app/.externalNativeBuild/cmake/debug/arm64-v8a/CMakeFiles/rebuild_cache.dir

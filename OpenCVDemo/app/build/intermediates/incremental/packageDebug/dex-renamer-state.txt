@@ -1,0 +1,7 @@
+#Thu Sep 21 19:30:53 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_772959609f80a38d00636d4193078b9e93e198d1
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b1904668deb5d89a1076db5a5d8284241873aa95\\classes.dex
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_b1904668deb5d89a1076db5a5d8284241873aa95
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\OpenCVDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_772959609f80a38d00636d4193078b9e93e198d1\\classes.dex

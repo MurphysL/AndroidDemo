@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.android\build-cache\9b9b7486f96fff250b868fcac4a47a0aea322dd7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="796f9229948e907471c5595fbe94655ccf03ff73">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\classes_dfaf1255e6d180111783fbfe178c167dc6f1782e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\javax.annotation\javax.annotation-api\1.2\479c1e06db31c432330183f5cae684163f186146\javax.annotation-api-1.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="479c1e06db31c432330183f5cae684163f186146">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\javax.annotation-api-1.2_3ce471c6c42bddc440885eac3863614776e3788e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.android\build-cache\7679c169e3ec08270b2aab0e1ca4c4f2109fee1d\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="d115b0e9e1501135fe91254ba884fcbd83d374c0">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\classes_7160a163e6b0df617d78d1b2bfe8f19b0bdf8ce4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\libs\ocr-sdk.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0f43b10c9f95147a91ef1ab7cfaac15726273b4e">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\ocr-sdk_3f0b19a6a74b148a5475ebf6ceb5cc791e8508a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\okio-1.13.0_f97ff296be50ee0a8f92deb9bb3ef7c743079fb0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.android\build-cache\f2811deebeb8c153d8858584d6489bb18c703d88\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a890ee8445927649d9ed50f625a315d8758688be">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\classes_4a952ba9af2f03f4714169755c7bdbb3f0f83d6d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\libs\ocr-sdk.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="0f43b10c9f95147a91ef1ab7cfaac15726273b4e">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\transforms\dex\debug\folders\1000\2\ocr-sdk_3f0b19a6a74b148a5475ebf6ceb5cc791e8508a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.3.0\9e09011e9767bb76b5e27c9b8223476b93b14631\converter-gson-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\converter-gson-2.3.0_b0ca13b0dd4fe609f9c92e2894d0b9304dc378c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.8.1\4d060ca3190df0eda4dc13415532a12e15ca5f11\okhttp-3.8.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4d060ca3190df0eda4dc13415532a12e15ca5f11">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\okhttp-3.8.1_d3ec4ea4768aeb2e1709866bf11b61f41ed96b9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.3.0\bcacde6a8ccedcc56c127403d26b76072fe6214d\retrofit-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="bcacde6a8ccedcc56c127403d26b76072fe6214d">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\retrofit-2.3.0_18d7057dbb3ffdbff04ade38029172db48b71c1c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\2.0.1\516c03b21d50a644d538de0f0369c620989cd8f0\jsr305-2.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="516c03b21d50a644d538de0f0369c620989cd8f0">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\jsr305-2.0.1_39c3c7e6716f67cbbcdd96f2b37cb83f0ac52c2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.8.0\c4ba5371a29ac9b2ad6129b1d39ea38750043eff\gson-2.8.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="c4ba5371a29ac9b2ad6129b1d39ea38750043eff">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\gson-2.8.0_cd196c7623683d1410bac973f3df576f44526b44.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\ocr_ui\build\intermediates\bundles\default\libs\license.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e5972190d048b7f55e12bd8349d8b87e51262f85">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\transforms\dex\debug\folders\1000\8\license_6267d147727b613fb0594c9e52ed3c215e924fc6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.jakewharton.retrofit\retrofit2-rxjava2-adapter\1.0.0\e117362a2103f8ec01091ebd2f40aca4e1ada599\retrofit2-rxjava2-adapter-1.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e117362a2103f8ec01091ebd2f40aca4e1ada599">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\retrofit2-rxjava2-adapter-1.0.0_3b795f028bf9b85dee2bd116d397ffa6a9fb2612.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\ocr_ui\build\intermediates\bundles\default\libs\license.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e5972190d048b7f55e12bd8349d8b87e51262f85">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\license_6267d147727b613fb0594c9e52ed3c215e924fc6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.android\build-cache\51c0e40068a2ff034a4d018f9288f0f95a179720\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7e11799d8a26bfa5d48acafe012ee5545b9bf468">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\classes_4ccd55ab44833b35cfb7821827cb7ab7cd1206c8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-core\1.3\42a25dc3219429f0e5d060061f71acb49bf010a0\hamcrest-core-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="42a25dc3219429f0e5d060061f71acb49bf010a0">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-core-1.3_7856c295cb7b099f7ebf4076bd3a1aac763ca06b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-integration\1.3\5de0c73fef18917cd85d0ab70bb23818685e4dfd\hamcrest-integration-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="5de0c73fef18917cd85d0ab70bb23818685e4dfd">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-integration-1.3_6b1253ec91ad268611001a6b565c784b39239967.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_94decf2a35bd809dd98fbc452c4d465e3391c6a8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="aca9fd71709bc9c36544965fccf1fe4548b7eba8">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_2661b95545b200130d0a9212cbe35e4c38ec8370\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\com.squareup\javawriter\2.1.1\67ff45d9ae02e583d0f9b3432a5ebbe05c30c966\javawriter-2.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="67ff45d9ae02e583d0f9b3432a5ebbe05c30c966">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\javawriter-2.1.1_49b13d86a9ef78ebcfd69a6586c8bf09c40f961d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.hamcrest\hamcrest-library\1.3\4785a3c21320980282f9f33d0d1264a69040538f\hamcrest-library-1.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4785a3c21320980282f9f33d0d1264a69040538f">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\hamcrest-library-1.3_0e4139a8813e1d14d1fb76e83646eaeaf99fc041.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.android\build-cache\644ba571119f5b822ec8c0d8fa7ad133918ce3eb\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="905f3e63973d47fedf2d945fa31d8c0f0c98816e">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\classes_ebb3cfcafe8c86f65fc9c69dc4ef33e1cdb538e2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="G:\AndroidWorkspace\AndroidDemo\OCRDemo\ocr_ui\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a9210e2267bde32077dae1f40859b464f304c473">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\debug\classes_f6d8613d32488f9cb702a913922b68065cbf4683.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\javax.inject-1_301e083456be01fc0005ebea638e380580e29e73.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\junit\junit\4.12\2973d150c0dc1fefe998f834810d68f278ea58ec\junit-4.12.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="2973d150c0dc1fefe998f834810d68f278ea58ec">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\OCRDemo\app\build\intermediates\pre-dexed\androidTest\debug\junit-4.12_d38af154a484faa563cd038e19e18d995bece383.jar" />
+    </item>
+
+</items>

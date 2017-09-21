@@ -1,0 +1,7 @@
+#Sat Aug 12 19:28:48 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\MudularDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_01c20737308a79a4a87b7ead39100ad42a69989f
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\MudularDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_399a6a84ab5c2d81bfcdfc542f98128240dc1c92\\classes.dex
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\MudularDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_399a6a84ab5c2d81bfcdfc542f98128240dc1c92
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\MudularDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_01c20737308a79a4a87b7ead39100ad42a69989f\\classes.dex

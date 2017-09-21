@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.jetbrains\annotations\13.0\919f0dfe192fb4e063e7dacadee7f8bb9a2672a9\annotations-13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="919f0dfe192fb4e063e7dacadee7f8bb9a2672a9">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\annotations-13.0_9236fc73b1394930a9fc719ea9a5b45a01802b05\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\965a9055e880d4c2cc7aecda2e81921427354883\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_dd04aba75f8febd72ad400520c799b8348818e1f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\79cb38dcd0d0e4ec238c297bfe8f3ebb9fc1f7e7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0c05512b04fd6ba73638b97e7950dd7153b722ff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\42ec3d502688cc9eef6a4faaf5406dfe13740208\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_831ecc78cc9e09c38606d3d8670e127b725ad025\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\1e5ddf29c76a17c1bb0bb6d2e25680f5ce1afdd5\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_219915f929a2faa83ef81dc0cae53d00ba2618b4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\91a8dbc001f223ea085c5f4eddda2d887a85a01c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ad3a25b92cd37b793597a1f597be84a685010089\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.3.1_13447f7dd1e8a7cd74ae0ebf809b95531d25d1cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.1.4-3\7f07ece855a7d40d5ef430218593e92282ae2a74\kotlin-stdlib-1.1.4-3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7f07ece855a7d40d5ef430218593e92282ae2a74">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-1.1.4-3_5b2c4f032f1744fd8f41ea7cb211642b37b4bda5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="4e472440a3650a4a6ae0a5559497960cc639a70a">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6719333fb9c8fdb01aeff313b709852f5d538024\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib\1.1.4-3\7f07ece855a7d40d5ef430218593e92282ae2a74\kotlin-stdlib-1.1.4-3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="7f07ece855a7d40d5ef430218593e92282ae2a74">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-1.1.4-3_5b2c4f032f1744fd8f41ea7cb211642b37b4bda5.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8568d7cd55ab6680db344958aa5b4bd0f4c42755">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_6719333fb9c8fdb01aeff313b709852f5d538024\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\bbc876a359ef82d52c961320f6d85e8373f04e05\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e600c2d72042a287be3b470d0a19088b45f2754e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\eaa0f40f405fd0ad17395111628792c860accdfc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_ebfebe7f4086fe6215031803390cb8ff399723b7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\6dfea7d85b459f178def0cbaad6407254d7ab34e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cc874a95798f88d02ec05bafdf4f41a237aa75ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jre7\1.1.4-3\e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c\kotlin-stdlib-jre7-1.1.4-3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\kotlin-stdlib-jre7-1.1.4-3_05a5661ec9bb4e1ce5fb62d88f47a863a65df6ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\MurphySL\.gradle\caches\modules-2\files-2.1\org.jetbrains.kotlin\kotlin-stdlib-jre7\1.1.4-3\e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c\kotlin-stdlib-jre7-1.1.4-3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.0"
+        sha1="e8c9cbfa33a3015fcc7581fe6a60a355bf7cd92c">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\pre-dexed\debug\kotlin-stdlib-jre7-1.1.4-3_05a5661ec9bb4e1ce5fb62d88f47a863a65df6ce.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_02bbf930a07d919001be0200ddaa2cce0d8f949e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\03bb8311d40b003adb88fe594a45ab9cf95000ee\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_936200d27333377bdc690f9c63506e0f95664565\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\Android\sdk\extras\m2repository\com\android\support\constraint\constraint-layout-solver\1.0.2\constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\constraint-layout-solver-1.0.2_15b2c0a85f8c2538050b86f4eeecd3f07625d19b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_02bbf930a07d919001be0200ddaa2cce0d8f949e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\9df949a23f7fb59ba3526d2008e17ac3801e22b6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\EventBusDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_0a0723705535fec55e192e80b0c83de6b39a33f6\classes.dex" />
+    </item>
+
+</items>

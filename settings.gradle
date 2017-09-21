@@ -1,1 +1,0 @@
-include ':app', ':tagslayout', ':mvp', ':imtest', ':pinterestlayout', ':thread', ':todo', ':autoupdatecomponent', ':autoupdatetest'

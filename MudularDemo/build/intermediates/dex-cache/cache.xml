@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\MurphySL\.android\build-cache\d5ee5ece280fb2633f2260f63721b5d3c03945d2\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="a2e3febabd522397e42a82d88daa8586d193ed7e">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\MudularDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d8c5460b4a0bd7a763e960a10ce1662f3fe80e8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\MudularDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\MudularDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_01c20737308a79a4a87b7ead39100ad42a69989f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\MudularDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3094fcf8ac37542b3e842721f9f8efb5598502bb">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\MudularDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_399a6a84ab5c2d81bfcdfc542f98128240dc1c92\classes.dex" />
+    </item>
+
+</items>

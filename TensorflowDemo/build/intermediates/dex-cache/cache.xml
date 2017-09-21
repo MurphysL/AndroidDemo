@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="11bcc1fcfb6df2219df1a78ef902b410800c19a7">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8f8bb1cc1e7d8df9d95e586f993c12da4aae7d28\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\libs\libandroid_tensorflow_inference_java.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="ed7c77e89f52b9ab318b03dce7b09ba3562ea0dd">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\build\intermediates\transforms\dex\debug\folders\1000\2\libandroid_tensorflow_inference_java_ded8e861a9169f7154a649eb4e0af7c418a9e01a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="G:\AndroidWorkspace\AndroidDemo\TensorflowDemo\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b5a7226c85f3b904f48660d3f236f6212608cddd\classes.dex" />
+    </item>
+
+</items>

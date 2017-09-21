@@ -1,0 +1,7 @@
+#Fri Aug 18 20:00:17 CST 2017
+base.0=G\:\\AndroidWorkspace\\AndroidDemo\\OCRDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_94decf2a35bd809dd98fbc452c4d465e3391c6a8
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=G\:\\AndroidWorkspace\\AndroidDemo\\OCRDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2661b95545b200130d0a9212cbe35e4c38ec8370\\classes.dex
+base.1=G\:\\AndroidWorkspace\\AndroidDemo\\OCRDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2661b95545b200130d0a9212cbe35e4c38ec8370
+file.0=G\:\\AndroidWorkspace\\AndroidDemo\\OCRDemo\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_94decf2a35bd809dd98fbc452c4d465e3391c6a8\\classes.dex
